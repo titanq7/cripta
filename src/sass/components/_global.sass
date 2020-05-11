@@ -90,11 +90,25 @@ button
 .q-section-title
   display: block
   padding-bottom: 66px
-  font-size: 40px
-  line-height: 140%
-  font-weight: 900
   text-align: center
-  text-transform: uppercase
-  color: #222222
+  &__text
+    position: relative
+    text-align: center
+    margin: 0 auto
+    font-size: 40px
+    line-height: 140%
+    font-weight: 900
+    text-transform: uppercase
+    color: #222222
+    &::before 
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 0%
+      height: 2px
+      background-color: #E31E25
+      transition: 0.8s
+    
 
 

@@ -5,6 +5,7 @@ $(function () {
 let previews = document.querySelectorAll('.q-radiant');
 
 for(let j = 0; j < previews.length; j++){
+	
 	var inner = document.createElement('div');
 	inner.classList.add('.mouseover-control');
 	previews[j].appendChild(inner);
