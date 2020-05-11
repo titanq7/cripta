@@ -1,10 +1,10 @@
 html 
-  box-sizing: border-box;
+  box-sizing: border-box
 
 *,
 *::before,
 *::after 
-  box-sizing: inherit;
+  box-sizing: inherit
 
 html,
 body 
@@ -37,9 +37,6 @@ a
   cursor: pointer
   text-decoration: none
   display: inline-block
-  transition: 0.4s
-  &:hover
-    opacity: 0.9
 
 span
   display: inline-block
@@ -47,7 +44,10 @@ span
 li, ul 
   list-style: none
 
-button 
+button
+  display: inline-block
+  background-color: transparent
+  border: none
   cursor: pointer
 
 .q-container 
@@ -55,5 +55,18 @@ button
   width: 100%
   padding: 0 15px
   margin: 0 auto
+
+.q-btn
+  padding: 14px 33px
+  min-width: 270px
+  max-width: 370px
+  font-weight: 400
+  font-size: 18px
+  text-align: center
+  color: #ffffff
+  background-color: #E31E25
+  transition: 0.7s
+  &:hover 
+    background-color: #28a745
 
 
