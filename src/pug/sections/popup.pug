@@ -1,0 +1,20 @@
+.q-popup-login
+  .q-popup-container
+    .q-popup-login__header
+      span.q-popup-login__header--text Авторизация
+      span.q-popup-login__close
+    .q-popup-login__content
+      form.q-form
+        .q-form__row
+          input.q-form__input#phone(placeholder="+7(___) ____ - __ - __" required type="phone")
+          label.q-form__label(for='phone') Номер телефона
+        .q-form__row
+          input.q-form__input#nameForm(placeholder="Ваш пароль" required type="password")
+          label.q-form__label(for='nameForm') Пароль
+        .q-form__row._submit-row
+          a.q-form__recover(href='#') Забыли пароль?
+          button.q-form__btn(type="submit") Войти
+
+    .q-popup-login__footer
+      span.q-popup-login__footer--text Впервые здесь?
+      button.q-popup-login__footer--registration Зарегестрироваться

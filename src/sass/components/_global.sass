@@ -49,6 +49,11 @@ button
   background-color: transparent
   border: none
   cursor: pointer
+  padding: 0
+  outline-color: transparent
+
+img 
+  max-width: 100%
 
 .q-container 
   max-width: 1170px
@@ -88,27 +93,66 @@ button
     color: white
 
 .q-section-title
-  display: block
-  padding-bottom: 66px
+  position: relative
+  display: inline-block
   text-align: center
-  &__text
-    position: relative
-    text-align: center
-    margin: 0 auto
-    font-size: 40px
-    line-height: 140%
-    font-weight: 900
-    text-transform: uppercase
-    color: #222222
-    &::before 
-      content: ''
-      position: absolute
-      bottom: 0
-      left: 0
-      width: 0%
-      height: 2px
-      background-color: #E31E25
-      transition: 0.8s
-    
+  margin: 0 auto
+  font-size: 40px
+  line-height: 140%
+  font-weight: 900
+  text-transform: uppercase
+  color: #222222
+  transition: 0.7s
+  &::before 
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 0%
+    height: 2px
+    background-color: #E31E25
+    transition: 0.8s
+  &:hover 
+    text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0,0,0,0.15), 0px 7px 2px rgba(0,0,0,0.1), 0px 10px 4px rgba(0,0,0,0.1)
 
+.q-inner
+  max-width: 1170px
+  width: 100%
+  padding: 0 15px
+  margin: 0 auto
 
+@keyframes showBlock 
+  0% 
+    opacity: 0
+
+  100% 
+    opacity: 1
+
+.q-popup_active 
+  display: block !important
+  animation: showBlock 1s linear forwards
+
+  
+// START ICONS
+  
+._idea
+  &::before
+    background-image: url(../img/main/icons/idea.svg)
+
+._cheers
+  &::before
+    background-image: url(../img/main/icons/cheers.svg)
+
+._handshake
+  &::before
+    background-image: url(../img/main/icons/handshake.svg)
+
+._training
+  &::before
+    background-image: url(../img/main/icons/training.svg)
+
+._analytics
+  &::before
+    background-image: url(../img/main/icons/analytics.svg)
+
+// END ICONS

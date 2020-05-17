@@ -12,12 +12,23 @@
     width: 100%
     color: #ffffff
     &--title
-      padding-bottom: 40px
+      margin-bottom: 40px
       max-width: 680px
       width: 100%
       font-size: 64px
       line-height: 102%
       font-weight: 700
+      transition: 1s
+      &:hover
+        text-shadow: 1px 1px 0 hsl(0,0,6%),
+        1px 1px 0 hsl(150%,1%,23%),
+        1.2px 1.2px 0 hsl(150%,1%,23%),
+        1.5px 1.5px 0 hsl(150%,1%,27%),
+        2px 2px 0 hsl(150%,1%,30%),
+        3px 3px 0 hsl(150%,1%,35%),
+        4px 4px 0 hsl(150%,1%,38%),
+        5px 5px 0 hsl(150%,1%,42%)
+        color: hsl(70, 17%, 99%)
     &--subtitle
       padding-bottom: 75px
       max-width: 570px
@@ -25,29 +36,29 @@
       font-size: 24px
       line-height: 133%
       font-weight: 400
-    &--button
-      margin-bottom: 150px
-    &--description
+    &--container
       position: relative
       padding-right: 115px
       max-width: 535px
       width: 100%
+    &--description
       font-size: 16px
       line-height: 150%
       font-weight: 400
-      &::after 
-        content: ''
-        position: absolute
-        top: 60%
-        right: 0px
-        transform: translateY(-50%)
-        max-width: 115px
-        width: 100%
-        min-height: 82px
-        background-repeat: no-repeat
-        background-position: center center
-        background-size: cover
-        background-image: url(../img/main/feedback/feedback-сertificate.png)
+    &--img 
+      content: ''
+      position: absolute
+      top: 60%
+      right: 0px
+      transform: translateY(-50%)
+      max-width: 115px
+      width: 100%
+      min-height: 82px
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: cover
+
+
   &-social
     position: absolute
     left: 38px
@@ -68,6 +79,8 @@
         border: none
         text-align: center
         background-color: transparent
+.q-feedback__info .q-btn
+  margin-bottom: 150px
 
 
       
