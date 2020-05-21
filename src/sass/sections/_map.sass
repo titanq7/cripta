@@ -1,0 +1,188 @@
+.q-map
+  position: relative
+  margin-top: 220px
+  width: 100%
+  background-color: #f3f3f3
+  .q-inner
+    display: flex
+    flex-direction: column
+    min-height: 842px
+  &-bg
+    position: absolute
+    width: 100%
+    min-height: 100%
+    z-index: 1
+
+.q-card
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  padding: 57px 44px 48px 45px
+  margin-bottom: 25px
+  max-width: 364px
+  width: 100%
+  background-color: #ffffff
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05)
+  z-index: 2
+  &__close
+    position: absolute
+    right: -9px
+    top: -10px
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: black
+    cursor: pointer
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateX(-50%)
+      width: 100%
+      height: 1px
+      background-color: white
+    &::before
+     transform: rotate(45deg)
+    &::after
+     transform: rotate(-45deg)
+  &__logo
+    margin-bottom: 28px
+    width: 81px
+    height: 70px
+  &__adress,
+  &__phone,
+  &__clock,
+    font-weight: 400
+    display: block
+  &__adress
+    padding-bottom: 28px
+    font-size: 18px
+    line-height: 133%
+    color: #222222
+    p + p
+      padding-top: 15px
+  &__phone
+    padding: 19px 0 13px
+    font-size: 24px
+    line-height: 133%
+    color: #E31E25
+    border-top: 1px dashed #CCCCCC
+    border-bottom: 1px dashed #CCCCCC
+  &__clock
+    padding-top: 23px
+    font-size: 18px
+    line-height: 24px
+    color: #222222
+    p + p
+      padding-top: 5px
+  
+
+.q-main-form
+  position: relative
+  padding: 143px 0 63px 100px
+  margin-top: -320px
+  margin-bottom: 60px
+  width: 100%
+  z-index: 3
+  background-image: url(../img/main/map/main-form-bg.webp)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  &__close
+    position: absolute
+    right: -9px
+    top: 67px
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: black
+    cursor: pointer
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      width: 100%
+      height: 1px
+      background-color: white
+    &::before
+     transform: rotate(45deg)
+    &::after
+     transform: rotate(-45deg)
+  &__header
+    display: block
+    max-width: 690px
+    width: 100%
+    padding-bottom: 20px
+    &--title
+      display: block
+      padding-bottom: 25px
+      font-size: 24px
+      line-height: 133%
+      font-weight: 400
+      color: white
+    &--info
+      display: flex
+      align-items: center
+      p + p
+        padding-top: 10px
+    &--warning
+      max-width: 170px
+      padding: 12px 20px
+      margin-right: 13px
+      font-size: 16px
+      font-weight: 400
+      color: white
+      text-align: center
+      border: 2px dashed #E31E25
+    &--message
+      max-width: 540px
+      font-weight: 400
+      color: white
+      font-size: 16px
+      line-height: 125%
+
+  &__container
+    max-width: 690px
+    width: 100%
+
+.g-form
+  position: relative
+  max-width: 620px
+  width: 100%
+  &__title
+    display: block
+    padding-bottom: 20px
+    font-weight: 500
+    color: white
+    font-size: 24px
+    line-height: 133%
+    p + p
+      padding-bottom: 5px
+  &__row
+    display: flex
+    flex-wrap: wrap
+  &__col
+    max-width: 50%
+    margin-right: 30px
+  &__input
+    padding-left: 20px
+    width: 270px
+    height: 48px
+    outline: none
+    margin-bottom: 20px
+  &__label
+    padding-bottom: 3px
+    font-weight: 400
+    font-size: 16px
+    line-height: 24px
+    color: white
+  &__checkbox
+    margin-bottom: 43px
+      
+// START CHECKBOX

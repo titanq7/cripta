@@ -97,20 +97,35 @@ var swiper = new Swiper('.swiper-container', {
 // END SLIDER
 
 
+// START SECTION MAP SCRIPT FOR FORMS
+
+const mainFormClose = document.querySelector('.q-main-form__close'),
+			mainForm = document.querySelector('.q-main-form'),
+			sectionMap = document.querySelector('.q-map'),
+			card = document.querySelector('.q-card'),
+			cardClose = document.querySelector('.q-card__close');
+
+let hideBlock = function(){
+	mainForm.classList.add('q-hide-block');
+	mainForm.classList.remove('dragBlock');
+	sectionMap.style.marginTop = '0px';
+}
+
+let hideCard = function(){
+	card.classList.add('q-hide-block');
+}
 
 
+mainFormClose.addEventListener('click', function(){
+	mainForm.classList.add('dragBlock');
+	setTimeout(hideBlock, 1200);
+});
 
+cardClose.addEventListener('click', function(){
+	card.classList.add('dragBlock');
+	setTimeout(hideCard, 1200);
+});
 
-
-
-
-
-
-
-
-
-
-
-
+// SECTION MAP SCRIPT FOR FORMS END
 
 });
