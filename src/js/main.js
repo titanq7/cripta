@@ -78,5 +78,39 @@ modalWindow(".q-btn", ".q-popup-login__close", ".q-popup-login");
 $("#phone").mask("+7(999) 999 - 99 - 99");
 
 
+// START SLIDER 
+
+
+var swiper = new Swiper('.swiper-container', {
+	autoHeight: true,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true
+	},
+	keyboard: true,
+});
+
+// END SLIDER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
